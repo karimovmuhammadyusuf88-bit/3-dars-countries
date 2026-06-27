@@ -40,12 +40,16 @@ import { countries } from "./data.js";
 const wrapperEl = document.querySelector('.countries-list')
 const searchInputEl = document.querySelector("#search-input")
 const selectEl = document.querySelector("select")
-// const themeBtn = document.querySelector("theme-btn");
 
 
 
 
 
+window.goDetail = function(id){
+    console.log(id);
+    
+    window.location.href = `http://127.0.0.1:5500/detail.html?id=${id}`
+}
 
 
 
@@ -54,10 +58,10 @@ function UpdateUi(arr) {
     wrapperEl.innerHTML = "";
 
     arr.forEach((item) => {
-        const { name, population, region, capital, flag } = item;
+        const { name, population, region, capital, flag, id} = item;
 
         wrapperEl.innerHTML += ` 
-              <div class="country">
+              <div onclick="goDetail(${id})" class="country" >
                 <img src=${flag} alt="">
                 <div class="deck">
                     <h3>${name}</h3>
@@ -71,6 +75,7 @@ function UpdateUi(arr) {
     });
 }
 UpdateUi(countries);
+
 
 
 searchInputEl.addEventListener('input', (e) => {
