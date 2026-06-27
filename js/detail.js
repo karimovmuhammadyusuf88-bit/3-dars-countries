@@ -1,12 +1,9 @@
-// import { countries } from "./data.js";
 
-// let id = window.location.href.split("=").at(-1);
 const detailEl = document.querySelector(".detail-section")
 // console.log(typeof id);
 console.log(countries);
 
-// let findEl = countries.find((item) => item.id == id);
-// console.log(findEl);
+
 
 
 
