@@ -44,11 +44,10 @@ const selectEl = document.querySelector("select")
 
 
 
-
 window.goDetail = function(id){
     console.log(id);
     
-    window.location.href = `http://127.0.0.1:5500/detail.html?id=${id}`
+    window.location.href = `detail.html?id=${id}`;
 }
 
 

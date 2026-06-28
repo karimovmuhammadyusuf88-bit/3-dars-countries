@@ -1,3 +1,4 @@
+import { countries } from "./data.js";
 
 const detailEl = document.querySelector(".detail-section")
 // console.log(typeof id);
@@ -12,7 +13,6 @@ console.log(countries);
 
 
 
-import { countries } from "./data.js";
 
 const id = Number(new URLSearchParams(window.location.search).get("id"));
 
