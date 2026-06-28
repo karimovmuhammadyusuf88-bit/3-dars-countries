@@ -351,4 +351,3 @@ export const countries = [
   flag: "https://flagcdn.com/w320/uz.png",
 },
 ];
-
